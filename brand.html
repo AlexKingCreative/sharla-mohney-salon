@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brand Guide | Sharla Mohney Salon</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #FAFAF8;
+      --dark: #1A1A1A;
+      --primary: #2C3244;
+      --accent: #C9A96E;
+      --accent-dark: #A8874D;
+      --text: #2D2D2D;
+      --text-muted: #777;
+      --white: #FFFFFF;
+      --border: #E8E4DC;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Inter', -apple-system, sans-serif;
+      --max-w: 960px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-body); font-size: 16px; line-height: 1.65; color: var(--text); background: var(--bg); -webkit-font-smoothing: antialiased; }
+    a { color: var(--primary); }
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 2rem; }
+    .header { background: var(--dark); padding: 2rem; }
+    .header-inner { max-width: var(--max-w); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    .header img { height: 44px; }
+    .header-note { font-size: 0.8rem; color: rgba(255,255,255,0.45); max-width: 360px; line-height: 1.55; }
+    .section { padding: 4rem 0; border-bottom: 1px solid var(--border); }
+    .section:last-child { border-bottom: none; }
+    h2 { font-family: var(--font-display); font-size: 1.8rem; font-weight: 500; color: var(--primary); margin-bottom: 0.4rem; }
+    .section-label { font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); font-weight: 500; display: block; margin-bottom: 0.3rem; }
+    .rule { width: 40px; height: 2px; background: var(--accent); margin: 0.8rem 0 2rem; }
+    p { font-size: 0.95rem; color: var(--text-muted); line-height: 1.72; margin-bottom: 1rem; font-weight: 300; }
+    /* LOGO */
+    .logo-samples { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem; }
+    @media (max-width: 560px) { .logo-samples { grid-template-columns: 1fr; } }
+    .logo-box { padding: 2rem; border-radius: 3px; display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }
+    .logo-box-light { background: var(--white); border: 1px solid var(--border); }
+    .logo-box-dark { background: var(--dark); }
+    .logo-box img { height: 48px; width: auto; }
+    .logo-box-label { font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); }
+    .logo-box-dark .logo-box-label { color: rgba(255,255,255,0.35); }
+    .logo-rules { margin-top: 1.5rem; }
+    .logo-rule { display: flex; gap: 0.8rem; align-items: flex-start; margin-bottom: 0.6rem; font-size: 0.88rem; color: var(--text-muted); }
+    .logo-rule::before { content: ''; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); margin-top: 6px; flex-shrink: 0; }
+    /* COLORS */
+    .color-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+    .color-swatch { border-radius: 3px; overflow: hidden; border: 1px solid var(--border); }
+    .color-block { height: 90px; }
+    .color-info { padding: 0.75rem; }
+    .color-role { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.2rem; }
+    .color-hex { font-size: 1rem; font-family: 'Courier New', monospace; color: var(--text); font-weight: 600; }
+    .color-rgb { font-size: 0.76rem; color: var(--text-muted); margin-top: 0.1rem; }
+    .color-use { font-size: 0.76rem; color: var(--text-muted); margin-top: 0.3rem; line-height: 1.4; }
+    /* TYPOGRAPHY */
+    .type-sample { margin-top: 1.5rem; padding: 2rem; background: var(--white); border: 1px solid var(--border); border-radius: 3px; margin-bottom: 1rem; }
+    .type-meta { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 1rem; }
+    .type-h1 { font-family: var(--font-display); font-size: 3rem; font-weight: 500; font-style: italic; color: var(--primary); line-height: 1.1; margin-bottom: 0.5rem; }
+    .type-h2 { font-family: var(--font-display); font-size: 2rem; font-weight: 500; color: var(--primary); line-height: 1.15; margin-bottom: 0.5rem; }
+    .type-body { font-size: 1rem; color: var(--text); line-height: 1.72; margin-bottom: 0.5rem; font-weight: 300; }
+    .type-caption { font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); }
+    /* SPACING */
+    .spacing-grid { margin-top: 1.5rem; }
+    .spacing-row { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.75rem; }
+    .spacing-bar { background: var(--accent); height: 12px; border-radius: 2px; flex-shrink: 0; }
+    .spacing-label { font-family: 'Courier New', monospace; font-size: 0.8rem; color: var(--text-muted); min-width: 110px; }
+    /* VOICE */
+    .voice-table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; }
+    .voice-table th { text-align: left; padding: 0.5rem 1rem; font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--white); background: var(--primary); }
+    .voice-table th:first-child { background: #234; }
+    .voice-table td { padding: 0.6rem 1rem; font-size: 0.88rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .voice-table td:first-child { color: var(--text); }
+    .voice-table td:last-child { color: #C0392B; text-decoration: line-through; opacity: 0.7; }
+    .footer-brand { padding: 2rem; text-align: center; background: #111; }
+    .footer-brand p { font-size: 0.78rem; color: rgba(255,255,255,0.3); }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-inner">
+      <img src="https://sharlamohneysalon.com/style/images/logo-light.png" alt="Sharla Mohney Salon" width="160" height="44" />
+      <p class="header-note">This page is not secret - it is simply not linked from the site. Anyone with the URL can view it. Share with designers, print shops, and anyone producing content for the brand.</p>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- LOGO -->
+    <section class="section" id="logo">
+      <span class="section-label">01 / Identity</span>
+      <h2>Logo</h2>
+      <div class="rule"></div>
+      <p>The logo is available as a PNG. Request the SVG source file from the developer for print or large-format use. Minimum display height: 30px. Clearspace: equal to the logo height on all sides.</p>
+      <div class="logo-samples">
+        <div class="logo-box logo-box-light">
+          <img src="https://sharlamohneysalon.com/style/images/logo-light-med2.png" alt="Logo on light background" width="180" height="48" />
+          <span class="logo-box-label">Light background use</span>
+        </div>
+        <div class="logo-box logo-box-dark">
+          <img src="https://sharlamohneysalon.com/style/images/logo-light.png" alt="Logo on dark background" width="160" height="40" />
+          <span class="logo-box-label">Dark background use</span>
+        </div>
+      </div>
+      <div class="logo-rules">
+        <div class="logo-rule">Do not stretch or distort the logo proportions.</div>
+        <div class="logo-rule">Do not apply drop shadows, glows, or decorative effects.</div>
+        <div class="logo-rule">Do not recolor the logo. Use only the provided light version.</div>
+        <div class="logo-rule">Minimum size: 30px height on screen, 0.75 inches in print.</div>
+      </div>
+    </section>
+
+    <!-- COLORS -->
+    <section class="section" id="colors">
+      <span class="section-label">02 / Colors</span>
+      <h2>Color Palette</h2>
+      <div class="rule"></div>
+      <div class="color-grid">
+        <div class="color-swatch">
+          <div class="color-block" style="background:#C9A96E;"></div>
+          <div class="color-info">
+            <div class="color-role">Primary Accent</div>
+            <div class="color-hex">#C9A96E</div>
+            <div class="color-rgb">rgb(201, 169, 110)</div>
+            <div class="color-use">Buttons, links, highlights, dividers</div>
+          </div>
+        </div>
+        <div class="color-swatch">
+          <div class="color-block" style="background:#2C3244;"></div>
+          <div class="color-info">
+            <div class="color-role">Primary Dark</div>
+            <div class="color-hex">#2C3244</div>
+            <div class="color-rgb">rgb(44, 50, 68)</div>
+            <div class="color-use">Headings, credential bar, booking card</div>
+          </div>
+        </div>
+        <div class="color-swatch">
+          <div class="color-block" style="background:#1A1A1A;"></div>
+          <div class="color-info">
+            <div class="color-role">Dark Section</div>
+            <div class="color-hex">#1A1A1A</div>
+            <div class="color-rgb">rgb(26, 26, 26)</div>
+            <div class="color-use">Nav, hero, testimonials, footer</div>
+          </div>
+        </div>
+        <div class="color-swatch">
+          <div class="color-block" style="background:#FAFAF8; border-bottom: 1px solid #E8E4DC;"></div>
+          <div class="color-info">
+            <div class="color-role">Background</div>
+            <div class="color-hex">#FAFAF8</div>
+            <div class="color-rgb">rgb(250, 250, 248)</div>
+            <div class="color-use">Page background, light sections</div>
+          </div>
+        </div>
+        <div class="color-swatch">
+          <div class="color-block" style="background:#2D2D2D;"></div>
+          <div class="color-info">
+            <div class="color-role">Body Text</div>
+            <div class="color-hex">#2D2D2D</div>
+            <div class="color-rgb">rgb(45, 45, 45)</div>
+            <div class="color-use">All body copy on light backgrounds</div>
+          </div>
+        </div>
+        <div class="color-swatch">
+          <div class="color-block" style="background:#A8874D;"></div>
+          <div class="color-info">
+            <div class="color-role">Accent Dark</div>
+            <div class="color-hex">#A8874D</div>
+            <div class="color-rgb">rgb(168, 135, 77)</div>
+            <div class="color-use">Button hover states</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TYPOGRAPHY -->
+    <section class="section" id="typography">
+      <span class="section-label">03 / Typography</span>
+      <h2>Typography</h2>
+      <div class="rule"></div>
+      <p>Two typefaces only. Cormorant Garamond for all display and heading use. Inter for all body copy, labels, and UI elements. Both are available via Google Fonts.</p>
+      <p>Google Fonts import: <code style="font-size:0.82rem;background:#f0ede7;padding:2px 6px;border-radius:2px;">Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500</code> + <code style="font-size:0.82rem;background:#f0ede7;padding:2px 6px;border-radius:2px;">Inter:wght@300;400;500;600</code></p>
+
+      <div class="type-sample">
+        <div class="type-meta">Cormorant Garamond / Display Heading</div>
+        <div class="type-h1">Hair That Turns Heads, Crafted to Last</div>
+        <div class="type-h2">Hair Extensions &amp; Color</div>
+      </div>
+
+      <div class="type-sample">
+        <div class="type-meta">Inter / Body + Labels</div>
+        <p class="type-body" style="margin-bottom:0.75rem;">30 years of expertise in luxury extensions, precision color, and expert styling. Every client leaves looking exactly like they imagined.</p>
+        <div class="type-caption">Ann Arbor, Michigan / Est. Vidal Sassoon Academy</div>
+      </div>
+
+      <div style="margin-top:1.5rem;padding:1.5rem;background:var(--white);border:1px solid var(--border);border-radius:3px;">
+        <div class="type-meta">Type Scale</div>
+        <table style="width:100%;border-collapse:collapse;font-size:0.88rem;">
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:0.5rem 0;font-weight:500;width:160px;">H1</td><td style="padding:0.5rem 0;color:var(--text-muted);">Cormorant Garamond, 48-64px desktop, 32px mobile, italic, weight 500</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:0.5rem 0;font-weight:500;">H2</td><td style="padding:0.5rem 0;color:var(--text-muted);">Cormorant Garamond, 32-40px, weight 500</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:0.5rem 0;font-weight:500;">H3</td><td style="padding:0.5rem 0;color:var(--text-muted);">Cormorant Garamond, 22-28px, weight 500</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:0.5rem 0;font-weight:500;">Body</td><td style="padding:0.5rem 0;color:var(--text-muted);">Inter, 16px minimum, weight 300-400, line-height 1.65-1.75</td></tr>
+          <tr><td style="padding:0.5rem 0;font-weight:500;">Labels</td><td style="padding:0.5rem 0;color:var(--text-muted);">Inter, 11-12px, weight 500, letter-spacing 0.2em, all-caps</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- SPACING -->
+    <section class="section" id="spacing">
+      <span class="section-label">04 / Spacing</span>
+      <h2>Spacing Scale</h2>
+      <div class="rule"></div>
+      <p>All spacing in the site uses this five-token scale. Use only these values - never arbitrary pixel amounts.</p>
+      <div class="spacing-grid">
+        <div class="spacing-row"><div class="spacing-bar" style="width:8px;"></div><span class="spacing-label">xs: 0.5rem (8px)</span><span style="font-size:0.82rem;color:var(--text-muted);">Fine spacing, tag gaps</span></div>
+        <div class="spacing-row"><div class="spacing-bar" style="width:16px;"></div><span class="spacing-label">sm: 1rem (16px)</span><span style="font-size:0.82rem;color:var(--text-muted);">Inline elements, form gaps</span></div>
+        <div class="spacing-row"><div class="spacing-bar" style="width:32px;"></div><span class="spacing-label">md: 2rem (32px)</span><span style="font-size:0.82rem;color:var(--text-muted);">Component padding, grid gaps</span></div>
+        <div class="spacing-row"><div class="spacing-bar" style="width:64px;"></div><span class="spacing-label">lg: 4rem (64px)</span><span style="font-size:0.82rem;color:var(--text-muted);">Section padding (minimum)</span></div>
+        <div class="spacing-row"><div class="spacing-bar" style="width:128px;"></div><span class="spacing-label">xl: 8rem (128px)</span><span style="font-size:0.82rem;color:var(--text-muted);">Full-width CTA blocks</span></div>
+      </div>
+    </section>
+
+    <!-- VOICE -->
+    <section class="section" id="voice">
+      <span class="section-label">05 / Tone of Voice</span>
+      <h2>Brand Voice</h2>
+      <div class="rule"></div>
+      <p>Confident, precise, and warm. Sharla's brand speaks like an expert who has nothing to prove - because after 30 years, she doesn't. Copy leads with the client's outcome, not the stylist's credentials. It is specific, never vague. It is professional, never cold.</p>
+      <table class="voice-table">
+        <thead>
+          <tr>
+            <th>On Brand</th>
+            <th>Off Brand</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>"Your most beautiful hair, every time you leave the chair."</td><td>"Welcome to Sharla Mohney Salon."</td></tr>
+          <tr><td>"Certified in four extension methods for every hair type."</td><td>"We offer a wide variety of services."</td></tr>
+          <tr><td>"Book your appointment. Available Tuesday through Friday."</td><td>"Feel free to get in touch with us."</td></tr>
+          <tr><td>"She solved my daughter's hair problems with creative thinking."</td><td>"Great salon, highly recommend!"</td></tr>
+          <tr><td>"30 years of expertise. Vidal Sassoon trained."</td><td>"Sharla has been doing hair for a long time."</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+  </div>
+
+  <div class="footer-brand">
+    <p>Sharla Mohney Salon Brand Guide | sharlamohneysalon.com/brand | Not indexed by search engines</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxury Hair Extensions &amp; Precision Color in Ann Arbor | Sharla Mohney Salon</title>
+  <meta name="description" content="Sharla Mohney Salon - luxury hair extensions, precision color, and makeup in Ann Arbor, MI. Vidal Sassoon trained, 30 years expertise. Book on Vagaro." />
+  <link rel="canonical" href="https://sharlamohneysalon.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sharla Mohney Salon | Luxury Hair Extensions in Ann Arbor, MI" />
+  <meta property="og:description" content="30 years of expertise in luxury extensions, precision color, and styling. Vidal Sassoon Academy trained. Ann Arbor, Michigan." />
+  <meta property="og:url" content="https://sharlamohneysalon.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://sharlamohneysalon.com/og-image.jpg" />
+
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Schema: HairSalon -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Sharla Mohney Salon",
+    "description": "Luxury hair extensions, precision color, styling, and makeup by Sharla Mohney in Ann Arbor, Michigan. Vidal Sassoon Academy trained with 30 years of expertise.",
+    "url": "https://sharlamohneysalon.com",
+    "telephone": "+17347485546",
+    "email": "sharla@sharlamohneysalon.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "820 W Eisenhower Pkwy, Suite 123",
+      "addressLocality": "Ann Arbor",
+      "addressRegion": "MI",
+      "postalCode": "48103",
+      "addressCountry": "US"
+    },
+    "priceRange": "$$-$$$",
+    "openingHours": [
+      "Tu 12:00-19:00",
+      "We 12:30-20:00",
+      "Th 12:30-19:00",
+      "Fr 10:00-18:00"
+    ],
+    "sameAs": [
+      "https://www.facebook.com/SharlaMohneySalon/",
+      "https://www.instagram.com/sharlamohneysalon/",
+      "https://www.vagaro.com/sharlamohneysalon"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #FAFAF8;
+      --dark: #1A1A1A;
+      --primary: #2C3244;
+      --accent: #C9A96E;
+      --accent-dark: #A8874D;
+      --text: #2D2D2D;
+      --text-muted: #777;
+      --white: #FFFFFF;
+      --border: #E8E4DC;
+      --space-xs: 0.5rem;
+      --space-sm: 1rem;
+      --space-md: 2rem;
+      --space-lg: 4rem;
+      --space-xl: 8rem;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Inter', -apple-system, sans-serif;
+      --max-w: 1200px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ---- NAV ---- */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 0.9rem 0;
+      background: rgba(26, 26, 26, 0.96);
+      backdrop-filter: blur(8px);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 var(--space-md);
+    }
+    .nav-logo img { height: 44px; width: auto; }
+    .nav-links {
+      display: none;
+      list-style: none;
+      gap: var(--space-md);
+      align-items: center;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.8);
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 400;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 1.3rem;
+      background: var(--accent);
+      color: var(--white) !important;
+      border-radius: 2px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      font-size: 0.78rem;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--accent-dark) !important; }
+    .nav-toggle {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      transition: 0.3s;
+    }
+    .nav-open .nav-links {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 64px;
+      left: 0; right: 0;
+      background: rgba(26,26,26,0.98);
+      padding: var(--space-md);
+      gap: var(--space-sm);
+      align-items: flex-start;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    @media (min-width: 768px) {
+      .nav-toggle { display: none; }
+      .nav-links { display: flex; flex-direction: row; position: static; background: none; padding: 0; }
+    }
+
+    /* ---- HERO ---- */
+    .hero {
+      position: relative;
+      min-height: 90vh;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: var(--space-lg);
+      overflow: hidden;
+      background: var(--dark);
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://sharlamohneysalon.com/style/images/art/new/extensions/_DSC3179.jpg');
+      background-size: cover;
+      background-position: center 30%;
+      opacity: 0.5;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.25) 55%, rgba(0,0,0,0.1) 100%);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: var(--max-w);
+      padding: 0 var(--space-md);
+      margin: 0 auto;
+      width: 100%;
+    }
+    .hero-eyebrow {
+      display: inline-block;
+      color: var(--accent);
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: var(--space-sm);
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.6rem, 6vw, 5rem);
+      font-weight: 500;
+      color: var(--white);
+      line-height: 1.08;
+      margin-bottom: var(--space-sm);
+      font-style: italic;
+      max-width: 760px;
+    }
+    .hero-sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.78);
+      max-width: 520px;
+      margin-bottom: var(--space-md);
+      line-height: 1.72;
+      font-weight: 300;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      align-items: center;
+      margin-bottom: var(--space-md);
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.9rem 2.1rem;
+      background: var(--accent);
+      color: var(--white);
+      border-radius: 2px;
+      font-weight: 500;
+      font-size: 0.88rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover { background: var(--accent-dark); }
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.9rem 2.1rem;
+      border: 1px solid rgba(255,255,255,0.45);
+      color: var(--white);
+      border-radius: 2px;
+      font-weight: 400;
+      font-size: 0.88rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      transition: border-color 0.2s;
+    }
+    .btn-ghost:hover { border-color: var(--white); }
+    .hero-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+    }
+    .hero-trust-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+    }
+    .hero-trust-item::before {
+      content: '';
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    /* ---- COMMON SECTION ---- */
+    .section { padding: var(--space-lg) 0; }
+    .section-dark { background: var(--dark); color: var(--white); }
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 var(--space-md); }
+    .section-label {
+      display: inline-block;
+      font-size: 0.68rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 500;
+      line-height: 1.12;
+      margin-bottom: var(--space-sm);
+      color: var(--primary);
+    }
+    .section-dark .section-title { color: var(--white); }
+    .section-sub {
+      font-size: 1.02rem;
+      color: var(--text-muted);
+      max-width: 560px;
+      line-height: 1.72;
+      margin-bottom: var(--space-md);
+      font-weight: 300;
+    }
+    .section-dark .section-sub { color: rgba(255,255,255,0.58); }
+
+    /* ---- SERVICES ---- */
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-sm);
+      margin-top: var(--space-md);
+    }
+    @media (min-width: 600px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 900px) { .services-grid { grid-template-columns: repeat(3, 1fr); } }
+    .service-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 2px;
+      aspect-ratio: 3/4;
+      background: var(--primary);
+      cursor: pointer;
+    }
+    .service-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .service-card:hover img { transform: scale(1.05); }
+    .service-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.1) 55%, transparent 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: var(--space-md);
+    }
+    .service-card-title {
+      font-family: var(--font-display);
+      font-size: 1.7rem;
+      font-weight: 500;
+      color: var(--white);
+      margin-bottom: 0.4rem;
+    }
+    .service-card-desc {
+      font-size: 0.84rem;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.55;
+      margin-bottom: 0.8rem;
+    }
+    .service-card-link {
+      display: inline-flex;
+      align-items: center;
+      color: var(--accent);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    .service-card-link::after { content: ' \2192'; }
+
+    /* ---- CREDENTIALS ---- */
+    .credentials { background: var(--primary); padding: var(--space-md) 0; }
+    .credentials-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-md);
+    }
+    @media (min-width: 768px) { .credentials-grid { grid-template-columns: repeat(4, 1fr); } }
+    .credential-item { text-align: center; padding: var(--space-sm); }
+    .credential-number {
+      font-family: var(--font-display);
+      font-size: 2.6rem;
+      color: var(--accent);
+      font-weight: 400;
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+    .credential-label {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.65);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      line-height: 1.4;
+    }
+
+    /* ---- ABOUT ---- */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+      align-items: start;
+    }
+    @media (min-width: 768px) { .about-grid { grid-template-columns: 1fr 1.3fr; } }
+    .about-image-wrap { position: relative; }
+    .about-image-wrap img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 2px;
+    }
+    .about-image-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
+      padding: var(--space-sm) var(--space-sm) var(--space-sm);
+    }
+    .about-image-caption span {
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .about-body {
+      font-size: 1rem;
+      color: var(--text);
+      line-height: 1.78;
+      margin-bottom: var(--space-md);
+      font-weight: 300;
+    }
+    .about-blockquote {
+      border-left: 3px solid var(--accent);
+      padding-left: var(--space-md);
+      margin: var(--space-md) 0;
+    }
+    .about-blockquote p {
+      font-family: var(--font-display);
+      font-size: 1.18rem;
+      font-style: italic;
+      color: var(--primary);
+      line-height: 1.65;
+      margin-bottom: 0.5rem;
+    }
+    .about-blockquote cite {
+      font-size: 0.76rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-style: normal;
+    }
+    .cert-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: var(--space-md);
+    }
+    .cert-tag {
+      display: inline-block;
+      padding: 0.35rem 0.75rem;
+      border: 1px solid var(--border);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      border-radius: 2px;
+    }
+
+    /* ---- TESTIMONIALS ---- */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-sm);
+      margin-top: var(--space-md);
+    }
+    @media (min-width: 600px) { .testimonials-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 900px) { .testimonials-grid { grid-template-columns: repeat(3, 1fr); } }
+    .testimonial-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 2px;
+      padding: var(--space-md);
+    }
+    .testimonial-stars {
+      color: var(--accent);
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      margin-bottom: 0.75rem;
+    }
+    .testimonial-text {
+      font-family: var(--font-display);
+      font-size: 1.08rem;
+      font-style: italic;
+      line-height: 1.68;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 0.75rem;
+    }
+    .testimonial-author {
+      font-size: 0.76rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    /* ---- CTA BLOCK ---- */
+    .cta-block {
+      text-align: center;
+      padding: var(--space-xl) var(--space-md);
+      background: var(--accent);
+    }
+    .cta-block h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 500;
+      color: var(--white);
+      margin-bottom: var(--space-sm);
+    }
+    .cta-block p {
+      color: rgba(255,255,255,0.82);
+      max-width: 460px;
+      margin: 0 auto var(--space-md);
+      font-size: 1rem;
+      line-height: 1.65;
+      font-weight: 300;
+    }
+    .btn-white {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.9rem 2.2rem;
+      background: var(--white);
+      color: var(--accent-dark);
+      border-radius: 2px;
+      font-weight: 600;
+      font-size: 0.88rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      transition: opacity 0.2s;
+    }
+    .btn-white:hover { opacity: 0.92; }
+
+    /* ---- CONTACT ---- */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+    }
+    @media (min-width: 768px) { .contact-grid { grid-template-columns: 1.3fr 1fr; } }
+    .contact-info h3 {
+      font-family: var(--font-display);
+      font-size: 1.7rem;
+      font-weight: 500;
+      margin-bottom: var(--space-md);
+      color: var(--primary);
+    }
+    .contact-row {
+      display: flex;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-md);
+      align-items: flex-start;
+    }
+    .contact-row-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+      min-width: 72px;
+      padding-top: 3px;
+      flex-shrink: 0;
+    }
+    .contact-row-value {
+      font-size: 0.95rem;
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .contact-row-value a {
+      color: var(--primary);
+      text-decoration: underline;
+      text-decoration-color: var(--accent);
+      text-underline-offset: 2px;
+    }
+    .hours-table { width: 100%; border-collapse: collapse; }
+    .hours-table tr { border-bottom: 1px solid var(--border); }
+    .hours-table td { padding: 0.42rem 0; font-size: 0.9rem; }
+    .hours-table td:first-child { font-weight: 500; color: var(--primary); width: 110px; }
+    .hours-table td:last-child { color: var(--text-muted); }
+    .hours-closed { opacity: 0.38; }
+    .hours-closed td { text-decoration: line-through; }
+    .contact-booking {
+      background: var(--primary);
+      border-radius: 3px;
+      padding: var(--space-md);
+      text-align: center;
+    }
+    .contact-booking h3 {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+    .contact-booking p {
+      color: rgba(255,255,255,0.62);
+      font-size: 0.9rem;
+      margin-bottom: var(--space-md);
+      line-height: 1.62;
+      font-weight: 300;
+    }
+    .contact-booking .btn-primary { display: block; text-align: center; margin-bottom: var(--space-md); }
+    .vagaro-qr { width: 110px; height: 110px; margin: 0 auto; opacity: 0.88; }
+    .vagaro-qr-label {
+      font-size: 0.66rem;
+      color: rgba(255,255,255,0.4);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: 0.4rem;
+    }
+    .contact-note {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.38);
+      margin-top: var(--space-sm);
+      line-height: 1.62;
+      font-style: italic;
+    }
+
+    /* ---- FOOTER ---- */
+    .footer { background: #111; padding: var(--space-lg) 0 var(--space-md); }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+      margin-bottom: var(--space-lg);
+    }
+    @media (min-width: 600px) { .footer-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 900px) { .footer-grid { grid-template-columns: 2fr 1fr 1fr; } }
+    .footer-brand img { height: 42px; margin-bottom: var(--space-sm); }
+    .footer-brand p {
+      font-size: 0.86rem;
+      color: rgba(255,255,255,0.44);
+      line-height: 1.68;
+      max-width: 280px;
+      font-weight: 300;
+    }
+    .footer-social { display: flex; gap: 0.5rem; margin-top: var(--space-sm); }
+    .footer-social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 2px;
+      color: rgba(255,255,255,0.5);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .footer-social a:hover { border-color: var(--accent); color: var(--accent); }
+    .footer-col h4 {
+      font-size: 0.66rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: var(--space-sm);
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 0.4rem; }
+    .footer-col ul li a {
+      color: rgba(255,255,255,0.48);
+      font-size: 0.88rem;
+      transition: color 0.2s;
+    }
+    .footer-col ul li a:hover { color: var(--white); }
+    .footer-col p {
+      color: rgba(255,255,255,0.48);
+      font-size: 0.88rem;
+      line-height: 1.72;
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.07);
+      padding-top: var(--space-md);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: var(--space-sm);
+    }
+    .footer-bottom p { font-size: 0.76rem; color: rgba(255,255,255,0.28); }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Sharla Mohney Salon home">
+        <img src="https://sharlamohneysalon.com/style/images/logo-light-med2.png" alt="Sharla Mohney Salon" width="180" height="44" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="services.html#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://www.vagaro.com/sharlamohneysalon" class="nav-cta" target="_blank" rel="noopener">Book Now</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg" role="img" aria-label="Luxury hair extensions close-up"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Ann Arbor, Michigan</span>
+      <h1>Hair That Turns Heads, Crafted to Last</h1>
+      <p class="hero-sub">30 years of expertise in luxury extensions, precision color, and expert styling. Every client leaves looking exactly like they imagined.</p>
+      <div class="hero-actions">
+        <a href="https://www.vagaro.com/sharlamohneysalon" class="btn-primary" target="_blank" rel="noopener">Book Your Appointment</a>
+        <a href="services.html" class="btn-ghost">View Services</a>
+      </div>
+      <div class="hero-trust">
+        <span class="hero-trust-item">Vidal Sassoon Academy Trained</span>
+        <span class="hero-trust-item">5.0 Stars on Vagaro</span>
+        <span class="hero-trust-item">Detroit Fashion Week Collaborator</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <span class="section-label">What We Offer</span>
+      <h2 class="section-title">Services Tailored to You</h2>
+      <p class="section-sub">From seamless extensions to editorial makeup, every service is customized to enhance your natural features and reflect your unique vision.</p>
+      <div class="services-grid">
+
+        <a href="services.html#extensions" class="service-card">
+          <img src="https://sharlamohneysalon.com/style/images/art/new/extensions/_DSC3179.jpg"
+               alt="Luxury hair extensions" width="600" height="800" />
+          <div class="service-card-overlay">
+            <h3 class="service-card-title">Hair Extensions</h3>
+            <p class="service-card-desc">Seamless, natural-looking results using Waterfall Beaded Row, Bellami, Hairdreams, and advanced fusion techniques.</p>
+            <span class="service-card-link">Explore Extensions</span>
+          </div>
+        </a>
+
+        <a href="services.html#hair" class="service-card">
+          <img src="https://sharlamohneysalon.com/style/images/art/new/hair/hair.jpg"
+               alt="Hair styling and color" width="600" height="800" loading="lazy" />
+          <div class="service-card-overlay">
+            <h3 class="service-card-title">Hair Styling &amp; Color</h3>
+            <p class="service-card-desc">Precision cuts, highlights, balayage, color correction, and smoothing treatments for all hair types and textures.</p>
+            <span class="service-card-link">Explore Styling</span>
+          </div>
+        </a>
+
+        <a href="services.html#makeup" class="service-card">
+          <img src="https://sharlamohneysalon.com/style/images/art/new/makeup/fullsizeoutput_5fc4-2.jpg"
+               alt="Professional makeup by Sharla Mohney" width="600" height="800" loading="lazy" />
+          <div class="service-card-overlay">
+            <h3 class="service-card-title">Makeup</h3>
+            <p class="service-card-desc">Special occasion, fashion, boudoir, and on-location photo shoot makeup using photo-friendly products for any skin tone.</p>
+            <span class="service-card-link">Explore Makeup</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDENTIALS BAR -->
+  <div class="credentials">
+    <div class="container">
+      <div class="credentials-grid">
+        <div class="credential-item">
+          <div class="credential-number">30+</div>
+          <div class="credential-label">Years of Expertise</div>
+        </div>
+        <div class="credential-item">
+          <div class="credential-number">5.0</div>
+          <div class="credential-label">Stars on Vagaro</div>
+        </div>
+        <div class="credential-item">
+          <div class="credential-number">5</div>
+          <div class="credential-label">Extension Certifications</div>
+        </div>
+        <div class="credential-item">
+          <div class="credential-number">DFW</div>
+          <div class="credential-label">Detroit Fashion Week</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-image-wrap">
+          <img src="https://sharlamohneysalon.com/style/images/art/new/sharla/_DSC2887-Edit.jpg"
+               alt="Sharla Mohney - hair stylist and makeup artist in Ann Arbor, MI"
+               width="560" height="750" loading="lazy" />
+          <div class="about-image-caption">
+            <span>Sharla Mohney</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-label">Meet Sharla</span>
+          <h2 class="section-title">Thirty Years of Transformations</h2>
+
+          <p class="about-body">Sharla Mohney started at the Vidal Sassoon Academy in California. What followed was three decades of relentless education, precision craft, and the kind of client loyalty you only earn when you consistently deliver on your promise.</p>
+
+          <p class="about-body">She is certified in four extension methods and has deep expertise in multicultural hair textures - meaning she can work with any hair type that walks through her door. She selects premium professional products, researches formulas, and shows up prepared for every single appointment.</p>
+
+          <p class="about-body">Beyond the salon, her work has been featured in national print and advertising campaigns for American Express and Shinola Detroit, and she has been a trusted collaborator at Detroit Fashion Week for over fifteen years.</p>
+
+          <div class="about-blockquote">
+            <p>"Sharla's talent truly shines as she effortlessly blends creativity with precision. Her attention to detail and dedication to her skill are unparalleled. Thanks to Sharla, our projects have been accepted in highly acclaimed publications with notable mentions on quality."</p>
+            <cite>Holly Q. - Publisher, IKONIK Magazine</cite>
+          </div>
+
+          <div class="cert-tags">
+            <span class="cert-tag">Vidal Sassoon Academy</span>
+            <span class="cert-tag">Waterfall Beaded Row</span>
+            <span class="cert-tag">Bellami Certified</span>
+            <span class="cert-tag">Hairdreams</span>
+            <span class="cert-tag">Advanced Fusion</span>
+            <span class="cert-tag">Multicultural Textures</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section-dark" id="testimonials">
+    <div class="container">
+      <span class="section-label">Client Reviews</span>
+      <h2 class="section-title">What Clients Are Saying</h2>
+      <p class="section-sub">Rated 5.0 stars on Vagaro. Clients have been coming back for 9 to 15 years.</p>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"We've been seeing Sharla for over 15 years. She stays up to date on the latest trends, attending trainings all over the country. Me, my two sons, and my African American daughter all trust Sharla with our hair. We've never been disappointed."</p>
+          <span class="testimonial-author">Megan S. / 15+ Year Client</span>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"I've been going to Sharla for nine years, and that pretty much says it all! She really listens to what you want and she's really good at making that happen. Talented, knowledgeable, artistic, and fun to talk to!"</p>
+          <span class="testimonial-author">Julia G. / 9-Year Client</span>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"Sharla has been working her magic on me for 14 years. She is not only an amazing talented stylist, but a true friend. She invests herself in you, and you know you are special!"</p>
+          <span class="testimonial-author">Leslie F. / 14-Year Client</span>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"My blonde color has never looked better. Her highlights are fine and artistic and natural looking. She solved my daughter's hair problems with creative thinking - I've never had a stylist think that way."</p>
+          <span class="testimonial-author">Cathleen W.</span>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"Sharla always keeps me looking great! I get so many compliments on my hair. She invests in education to keep current on the latest products and techniques. I've been a satisfied customer for over fourteen years."</p>
+          <span class="testimonial-author">Tina W. / 14-Year Client</span>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"There is no one more talented in styling and coloring than Sharla Mohney. You walk in and leave looking like a model. And as a bonus you are entertained by a truly caring individual who is a great conversationalist."</p>
+          <span class="testimonial-author">Maxine H.</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BLOCK -->
+  <div class="cta-block">
+    <h2>Ready for Your Best Hair?</h2>
+    <p>Available Tuesday through Friday. Book directly on Vagaro, or call to talk through your vision first.</p>
+    <a href="https://www.vagaro.com/sharlamohneysalon" class="btn-white" target="_blank" rel="noopener">Book on Vagaro</a>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <span class="section-label">Visit Us</span>
+      <h2 class="section-title" style="margin-bottom: var(--space-lg);">Find &amp; Book Sharla</h2>
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <h3>Salon Details</h3>
+
+          <div class="contact-row">
+            <span class="contact-row-label">Address</span>
+            <div class="contact-row-value">
+              820 W Eisenhower Pkwy, Suite 123<br />Ann Arbor, MI 48103
+              <br /><br />
+              <em style="color:var(--text-muted);font-size:0.85rem;">Inside My Salon Suites, Cranbrook Village Plaza. Use the intercom in the lobby: press 123 and the bell symbol to be let in.</em>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-row-label">Phone</span>
+            <div class="contact-row-value"><a href="tel:+17347485546">(734) 748-5546</a></div>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-row-label">Email</span>
+            <div class="contact-row-value"><a href="mailto:sharla@sharlamohneysalon.com">sharla@sharlamohneysalon.com</a></div>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-row-label">Hours</span>
+            <div class="contact-row-value">
+              <table class="hours-table" aria-label="Business hours">
+                <tbody>
+                  <tr><td>Tuesday</td><td>12:00 PM - 7:00 PM</td></tr>
+                  <tr><td>Wednesday</td><td>12:30 PM - 8:00 PM</td></tr>
+                  <tr><td>Thursday</td><td>12:30 PM - 7:00 PM</td></tr>
+                  <tr><td>Friday</td><td>10:00 AM - 6:00 PM</td></tr>
+                  <tr class="hours-closed"><td>Saturday</td><td>Closed</td></tr>
+                  <tr class="hours-closed"><td>Sunday</td><td>Closed</td></tr>
+                  <tr class="hours-closed"><td>Monday</td><td>Closed</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-row-label">Parking</span>
+            <div class="contact-row-value">Free parking available on site</div>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-row-label">Accepts</span>
+            <div class="contact-row-value">Visa, Mastercard, Discover, Debit, Cash</div>
+          </div>
+        </div>
+
+        <div class="contact-booking">
+          <h3>Book Your Visit</h3>
+          <p>All appointments are booked through Vagaro. Scan the QR code or tap the button below to see availability.</p>
+          <a href="https://www.vagaro.com/sharlamohneysalon" class="btn-primary" target="_blank" rel="noopener">Open Vagaro Booking</a>
+          <img src="https://sharlamohneysalon.com/style/images/vagaro-scheduler-QRcode.png"
+               alt="Scan to book an appointment with Sharla Mohney Salon on Vagaro"
+               width="110" height="110" class="vagaro-qr" loading="lazy" />
+          <p class="vagaro-qr-label">Scan to Book</p>
+          <p class="contact-note">24-hour cancellation policy applies. Failure to cancel or no-show may result in a 50% service charge.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <img src="https://sharlamohneysalon.com/style/images/logo-light.png" alt="Sharla Mohney Salon" width="160" height="40" loading="lazy" />
+          <p>Luxury hair extensions, precision color, and expert styling in Ann Arbor, MI. Vidal Sassoon Academy trained with over 30 years of expertise.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/SharlaMohneySalon/" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+            <a href="https://www.instagram.com/sharlamohneysalon/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="services.html#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>820 W Eisenhower Pkwy, Suite 123<br />Ann Arbor, MI 48103</p>
+          <p style="margin-top:0.6rem;">
+            <a href="tel:+17347485546" style="color:rgba(255,255,255,0.48)">(734) 748-5546</a>
+          </p>
+          <p>
+            <a href="mailto:sharla@sharlamohneysalon.com" style="color:rgba(255,255,255,0.48)">sharla@sharlamohneysalon.com</a>
+          </p>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sharla Mohney Salon. All rights reserved.</p>
+        <p>820 W Eisenhower Pkwy, Suite 123, Ann Arbor, MI 48103</p>
+      </div>
+    </div>
+  </footer>
+
+  <script defer>
+    const navToggle = document.getElementById('navToggle');
+    const nav = document.getElementById('nav');
+    navToggle.addEventListener('click', function () {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+    // Close menu on link click
+    document.querySelectorAll('#navLinks a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        nav.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+
+</body>
+</html>
