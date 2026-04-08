@@ -19,7 +19,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
 
   <!-- Schema: HairSalon -->
   <script type="application/ld+json">
@@ -56,22 +56,22 @@
 
   <style>
     :root {
-      --bg: #FAFAF8;
-      --dark: #1A1A1A;
-      --primary: #2C3244;
-      --accent: #C9A96E;
-      --accent-dark: #A8874D;
-      --text: #2D2D2D;
-      --text-muted: #777;
+      --bg: #FFFFFF;
+      --dark: #151515;
+      --primary: #1E1E1E;
+      --accent: #4C86E5;
+      --accent-dark: #3A70D0;
+      --text: #606060;
+      --text-muted: #888;
       --white: #FFFFFF;
-      --border: #E8E4DC;
+      --border: #E5E5E5;
       --space-xs: 0.5rem;
       --space-sm: 1rem;
       --space-md: 2rem;
       --space-lg: 4rem;
       --space-xl: 8rem;
-      --font-display: 'Cormorant Garamond', Georgia, serif;
-      --font-body: 'Inter', -apple-system, sans-serif;
+      --font-display: 'Montserrat', sans-serif;
+      --font-body: 'Mulish', sans-serif;
       --max-w: 1200px;
     }
 
@@ -180,9 +180,9 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background-image: url('https://sharlamohneysalon.com/style/images/art/new/extensions/_DSC3179.jpg');
+      background-image: url('https://sharlamohneysalon.com/style/images/art/slider-bg51.jpg');
       background-size: cover;
-      background-position: center 30%;
+      background-position: center center;
       opacity: 0.5;
     }
     .hero-overlay {
@@ -209,12 +209,12 @@
     }
     .hero h1 {
       font-family: var(--font-display);
-      font-size: clamp(2.6rem, 6vw, 5rem);
-      font-weight: 500;
+      font-size: clamp(2rem, 5vw, 3.8rem);
+      font-weight: 700;
       color: var(--white);
-      line-height: 1.08;
+      line-height: 1.18;
+      letter-spacing: -0.01em;
       margin-bottom: var(--space-sm);
-      font-style: italic;
       max-width: 760px;
     }
     .hero-sub {
@@ -297,9 +297,10 @@
     }
     .section-title {
       font-family: var(--font-display);
-      font-size: clamp(2rem, 4vw, 3.2rem);
-      font-weight: 500;
-      line-height: 1.12;
+      font-size: clamp(1.6rem, 3.2vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
       margin-bottom: var(--space-sm);
       color: var(--primary);
     }
@@ -384,7 +385,7 @@
       font-family: var(--font-display);
       font-size: 2.6rem;
       color: var(--accent);
-      font-weight: 400;
+      font-weight: 700;
       line-height: 1;
       margin-bottom: 0.4rem;
     }
@@ -439,11 +440,12 @@
       margin: var(--space-md) 0;
     }
     .about-blockquote p {
-      font-family: var(--font-display);
-      font-size: 1.18rem;
+      font-family: var(--font-body);
+      font-size: 1rem;
       font-style: italic;
+      font-weight: 300;
       color: var(--primary);
-      line-height: 1.65;
+      line-height: 1.72;
       margin-bottom: 0.5rem;
     }
     .about-blockquote cite {
@@ -492,11 +494,12 @@
       margin-bottom: 0.75rem;
     }
     .testimonial-text {
-      font-family: var(--font-display);
-      font-size: 1.08rem;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
       font-style: italic;
-      line-height: 1.68;
-      color: rgba(255,255,255,0.85);
+      font-weight: 300;
+      line-height: 1.72;
+      color: rgba(255,255,255,0.82);
       margin-bottom: 0.75rem;
     }
     .testimonial-author {
@@ -515,8 +518,8 @@
     }
     .cta-block h2 {
       font-family: var(--font-display);
-      font-size: clamp(1.8rem, 4vw, 3rem);
-      font-weight: 500;
+      font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+      font-weight: 700;
       color: var(--white);
       margin-bottom: var(--space-sm);
     }
@@ -746,6 +749,7 @@
           <img src="https://sharlamohneysalon.com/style/images/art/new/extensions/_DSC3179.jpg"
                alt="Luxury hair extensions" width="600" height="800" />
           <div class="service-card-overlay">
+            <img src="https://sharlamohneysalon.com/style/images/art/new/icons/hair_icon.png" alt="" width="40" height="40" style="margin-bottom:0.5rem;opacity:0.85;" loading="lazy" />
             <h3 class="service-card-title">Hair Extensions</h3>
             <p class="service-card-desc">Seamless, natural-looking results using Waterfall Beaded Row, Bellami, Hairdreams, and advanced fusion techniques.</p>
             <span class="service-card-link">Explore Extensions</span>
@@ -756,6 +760,7 @@
           <img src="https://sharlamohneysalon.com/style/images/art/new/hair/hair.jpg"
                alt="Hair styling and color" width="600" height="800" loading="lazy" />
           <div class="service-card-overlay">
+            <img src="https://sharlamohneysalon.com/style/images/art/new/icons/hair_icon.png" alt="" width="40" height="40" style="margin-bottom:0.5rem;opacity:0.85;" loading="lazy" />
             <h3 class="service-card-title">Hair Styling &amp; Color</h3>
             <p class="service-card-desc">Precision cuts, highlights, balayage, color correction, and smoothing treatments for all hair types and textures.</p>
             <span class="service-card-link">Explore Styling</span>
@@ -766,6 +771,7 @@
           <img src="https://sharlamohneysalon.com/style/images/art/new/makeup/fullsizeoutput_5fc4-2.jpg"
                alt="Professional makeup by Sharla Mohney" width="600" height="800" loading="lazy" />
           <div class="service-card-overlay">
+            <img src="https://sharlamohneysalon.com/style/images/art/new/icons/makeup_icon2.png" alt="" width="40" height="40" style="margin-bottom:0.5rem;opacity:0.85;" loading="lazy" />
             <h3 class="service-card-title">Makeup</h3>
             <p class="service-card-desc">Special occasion, fashion, boudoir, and on-location photo shoot makeup using photo-friendly products for any skin tone.</p>
             <span class="service-card-link">Explore Makeup</span>
